@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overlay demo</title>
+<style type="text/css">
+
+body, html {
+    margin: 0;
+    padding: 0;
+    border:0;
+    height: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#main-img{
+background-image: url("back.jpg");
+background-size: cover;
+background-position: center center;
+position: relative;
+height: 100%;
+width: 100%;
+top:0;
+bottom: 0;
+z-index: -10;
+}
+
+#img-overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	/*--text css--*/
+	color: white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 5;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id = "main-img">
+	<div id = "img-overlay">CSS full image transparent Overlay Demo</div>
+</div>
+</body>
+</html>

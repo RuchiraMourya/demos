@@ -32,11 +32,15 @@ z-index: -10;
 	top:0;
 	bottom: 0;
 	background-color: rgba(0,0,0,0.5);
-	/*--text css--*/
-	color: white;
+}
+	
+.img-text{
+    color: white;
     font-size: 50px;
     text-align: center;
-    line-height: 5;
+    width: 100%;
+    position: absolute;
+    margin: 100px auto;
 }
 
 </style>
@@ -44,7 +48,8 @@ z-index: -10;
 
 <body>
 <div id = "main-img">
-	<div id = "img-overlay">CSS full image transparent Overlay Demo</div>
+	<div class = "img-text">CSS full image transparent Overlay Demo</div>
+	<div id = "img-overlay"></div>
 </div>
 </body>
 </html>
